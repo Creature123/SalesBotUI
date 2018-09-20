@@ -1,0 +1,32 @@
+<!--
+  Generated template for the CameraPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar color="navColor">
+        <ion-title>Dealer Assessment</ion-title>
+      </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <button ion-button full large outline color="navColor">{{dealername}}</button>      
+      <ion-item>
+      <button ion-button round  large (click) = "getImage()"  color="navColor">Browse</button>
+        <!-- <img [src]="{{imageFileName}}" *ngIf="imageFileName" alt="Ionic File" width="50" />     -->
+        <button ion-button round large  color="navColor" item-end (click)="takePicture()">Camera</button>
+      </ion-item>
+         <!-- <ion-card *ngIf="imgSrc"> -->
+         <img [src]="imgSrc">
+         <!-- </ion-card> -->
+         <!-- <img src="{{imageFileName}}" *ngIf="imageFileName" alt="Ionic File" width="50" />     -->
+
+      <!-- <img [src]="bigImg"> -->
+        <ion-footer no-shadow>
+            <ion-toolbar position="bottom">
+                <button ion-button round full large (click)="uploadFile()"  color="navColor">Upload</button>
+            </ion-toolbar>
+        </ion-footer>
+</ion-content>

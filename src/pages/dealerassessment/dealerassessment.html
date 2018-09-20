@@ -1,0 +1,38 @@
+<!--
+  Generated template for the DealerassessmentPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="navColor">
+    <ion-title>Dealer Assessment</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+
+
+<ion-content padding class="page-dealerassessment">
+    <ion-card>
+        <ion-card-header align= "center" class="ion-card-header">
+          Dealers
+        </ion-card-header>
+      
+  <ion-list class="bodyStyle">
+    <button ion-item outline *ngFor="let item of dealersList" (click)= "openDealer(item)" class="conStyle"> 
+        <!-- <ion-icon name="radio-button-off" item-start></ion-icon> -->
+        <ion-icon  item-start>
+        <ion-img width="30" height="30" src="assets/imgs/{{item}}.png" class="imgStyle"></ion-img>
+      </ion-icon>
+        {{ item }} 
+        <ion-icon name="arrow-forward" item-end></ion-icon>
+        <!-- <button ion-button item-end (click) = "getImage()">Choose File</button>
+        <img src="{{imageFileName}}" *ngIf="imageFileName" alt="Ionic File" width="50" />
+        <button ion-button item-end (click)="uploadFile()">Upload</button> -->
+   </button>   
+  </ion-list>
+  </ion-card>
+</ion-content>

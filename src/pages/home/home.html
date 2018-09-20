@@ -1,0 +1,12 @@
+
+
+<!-- <ion-content padding>
+   <button ion-button full color="dark" (click)="dealerAssessment()">Dealer Assessment</button>
+   <button ion-button full color="dark" (click)="mapRouting()">Map Routing</button>
+   <button ion-button full color="dark" (click)="questionAnswer()">QnA</button>
+</ion-content> -->
+<ion-tabs color="navColor">
+    <ion-tab [root]="tab1"  tabTitle="Dealer Assessment" tabIcon="easel"></ion-tab>
+    <ion-tab [root]="tab2"  tabTitle="Map Routing" tabIcon="map"></ion-tab>
+    <ion-tab [root]="tab3"  tabTitle="QnA" tabIcon="chatboxes"></ion-tab>
+</ion-tabs>
