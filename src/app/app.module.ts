@@ -16,6 +16,7 @@ import { File } from '@ionic-native/file';
 import { Camera, CameraOptions } from '@ionic-native/camera';
 import { HeaderColor } from '@ionic-native/header-color';
 import { HttpClientModule } from '@angular/common/http';
+import { HTTP } from '@ionic-native/http';
 import { RatingPage } from '../pages/rating/rating';
 
 @NgModule({
@@ -53,7 +54,8 @@ import { RatingPage } from '../pages/rating/rating';
     File,
     Camera,
     FileTransfer,
-    HeaderColor
+    HeaderColor,
+    HTTP
   ]
 })
 export class AppModule {}

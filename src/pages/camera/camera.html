@@ -18,9 +18,9 @@
         <!-- <img [src]="{{imageFileName}}" *ngIf="imageFileName" alt="Ionic File" width="50" />     -->
         <button ion-button round large  color="navColor" item-end (click)="takePicture()">Camera</button>
       </ion-item>
-         <!-- <ion-card *ngIf="imgSrc"> -->
+         <ion-item *ngIf="imgSrc">
          <img [src]="imgSrc">
-         <!-- </ion-card> -->
+        </ion-item>
          <!-- <img src="{{imageFileName}}" *ngIf="imageFileName" alt="Ionic File" width="50" />     -->
 
       <!-- <img [src]="bigImg"> -->
